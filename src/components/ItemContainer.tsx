@@ -18,4 +18,6 @@ const mapStateToProps=(state:IGlobalState,ownProps:any)=>{
         type:"EVEN"
     }
 }
+//simarly we can access props in matDispatchToProps function as well
+
 export default connect(mapStateToProps)(ItemContainer);
