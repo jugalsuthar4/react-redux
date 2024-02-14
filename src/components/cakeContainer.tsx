@@ -1,5 +1,6 @@
 import { buyCake } from "../actions/cake";
 import { connect } from "react-redux";
+import { IGlobalState } from "../actions/types/globalState";
 const CakeContainer = ({ numOfCakes, buyCake }: any) => {
   return (
     <>
@@ -10,9 +11,9 @@ const CakeContainer = ({ numOfCakes, buyCake }: any) => {
   );
 };
 
-const mapStateToProps = (state: any) => {
+const mapStateToProps = (state: IGlobalState) => {
   return {
-    numOfCakes: state.numOfCakes,
+    numOfCakes: state.cake.numOfCakes,
   };
 };
 
