@@ -1,12 +1,14 @@
 import { BUY_ICECREAM } from "./types/icecream"
 
 export type IceCreamActions= |{
-   type:typeof BUY_ICECREAM
+   type:typeof BUY_ICECREAM,
+   payload:any
 }
 
 
-export const buyIcecream=()=>{
+export const buyIcecream=(numberOfCake=1)=>{
     return {
-        type:BUY_ICECREAM
+        type:BUY_ICECREAM,
+        payload:numberOfCake
     }
 }

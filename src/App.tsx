@@ -4,6 +4,7 @@ import store from './store/store';
 import CakeContainer from './components/cakeContainer';
 import CupCakeContainer from './components/cupCakeContainer';
 import IceCreamContainer from './components/icecreamContainer';
+import ItemContainer from './components/ItemContainer';
 function App() {
   return (
 
@@ -12,6 +13,7 @@ function App() {
          <CakeContainer/>
          <CupCakeContainer/>
          <IceCreamContainer/>
+         <ItemContainer count={2}/>
     </div>
     </Provider>
   );
